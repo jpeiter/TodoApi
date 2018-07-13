@@ -70,7 +70,6 @@ namespace TodoApi.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(long id)
         {
-
             var todo = this.context.TodoItems.Find(id);
 
             if(todo == null)
